@@ -21,7 +21,7 @@ def empty(a):
     print(h_min, h_max, s_min, s_max, v_min, v_max)
     return h_min, h_max, s_min, s_max, v_min, v_max
 
-path = read_picture("./img")
+path = read_picture("white_img")
 # 创建一个窗口，放置6个滑动条
 cv.namedWindow("TrackBars", cv.WINDOW_AUTOSIZE)
 cv.resizeWindow("TrackBars", 640, 240)
