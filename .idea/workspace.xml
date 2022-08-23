@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bd94210-6f6e-4934-aef2-cdaa1baffa6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/black_img/black_test/black_test1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/black_test/black_test2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/camera9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/black_img/sample/purple.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/area_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/area_extract.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/color_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/color_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/find_thres.py" beforeDir="false" afterPath="$PROJECT_DIR$/find_thres.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/white_img/1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/white_img/2.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/3.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/white_img/3.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/4.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/white_img/4.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
@@ -198,10 +166,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.area_extract" />
         <item itemvalue="Python.color_analysis" />
         <item itemvalue="Python.find_thres" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +185,8 @@
       <updated>1660708323379</updated>
       <workItem from="1660708326606" duration="61272000" />
       <workItem from="1661136159359" duration="6607000" />
-      <workItem from="1661150529686" duration="14476000" />
+      <workItem from="1661150529686" duration="15088000" />
+      <workItem from="1661219789834" duration="7402000" />
     </task>
     <servers />
   </component>
@@ -225,56 +194,60 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1807" height="233" key="GridCell.Tab.0.bottom" timestamp="1661165057441">
+    <state width="1807" height="300" key="GridCell.Tab.0.bottom" timestamp="1661227433947">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="233" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1661165057441" />
-    <state width="1807" height="233" key="GridCell.Tab.0.center" timestamp="1661165057440">
+    <state width="1807" height="300" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1661227433947" />
+    <state width="1807" height="300" key="GridCell.Tab.0.center" timestamp="1661227433946">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="233" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1661165057440" />
-    <state width="1807" height="233" key="GridCell.Tab.0.left" timestamp="1661165057439">
+    <state width="1807" height="300" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1661227433946" />
+    <state width="1807" height="300" key="GridCell.Tab.0.left" timestamp="1661227433945">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="233" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1661165057439" />
-    <state width="1807" height="233" key="GridCell.Tab.0.right" timestamp="1661165057441">
+    <state width="1807" height="300" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1661227433945" />
+    <state width="1807" height="300" key="GridCell.Tab.0.right" timestamp="1661227433947">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="233" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1661165057441" />
-    <state width="1807" height="303" key="GridCell.Tab.1.bottom" timestamp="1661161568120">
+    <state width="1807" height="300" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1661227433947" />
+    <state width="1807" height="303" key="GridCell.Tab.1.bottom" timestamp="1661222246630">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="303" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1661161568120" />
-    <state width="1807" height="303" key="GridCell.Tab.1.center" timestamp="1661161568119">
+    <state width="1807" height="303" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1661222246630" />
+    <state width="1807" height="303" key="GridCell.Tab.1.center" timestamp="1661222246630">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="303" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1661161568119" />
-    <state width="1807" height="303" key="GridCell.Tab.1.left" timestamp="1661161568119">
+    <state width="1807" height="303" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1661222246630" />
+    <state width="1807" height="303" key="GridCell.Tab.1.left" timestamp="1661222246629">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="303" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1661161568119" />
-    <state width="1807" height="303" key="GridCell.Tab.1.right" timestamp="1661161568119">
+    <state width="1807" height="303" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1661222246629" />
+    <state width="1807" height="303" key="GridCell.Tab.1.right" timestamp="1661222246630">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="303" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1661161568119" />
+    <state width="1807" height="303" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1661222246630" />
     <state x="475" y="187" key="SettingsEditor" timestamp="1660708545427">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="475" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1660708545427" />
-    <state x="526" y="240" width="925" height="624" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1660812909648">
+    <state width="926" height="527" key="XDebugger.FullValuePopup" timestamp="1661221525573">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="526" y="240" width="925" height="624" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/67.27.1853.1053@67.27.1853.1053" timestamp="1660812909648" />
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1660813059405">
+    <state width="926" height="527" key="XDebugger.FullValuePopup/67.27.1853.1053@67.27.1853.1053" timestamp="1661221525573" />
+    <state x="526" y="240" width="925" height="624" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1661221823742">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1660813059405" />
+    <state x="526" y="240" width="925" height="624" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/67.27.1853.1053@67.27.1853.1053" timestamp="1661221823742" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1661222712561">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1661222712561" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/rl_monitoring$area_extract.coverage" NAME="area_extract Coverage Results" MODIFIED="1661163201011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rl_monitoring$area_extract.coverage" NAME="area_extract Coverage Results" MODIFIED="1661226568467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rl_monitoring$color_analysis.coverage" NAME="color_analysis Coverage Results" MODIFIED="1661155426989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rl_monitoring$test.coverage" NAME="test Coverage Results" MODIFIED="1660716941546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rl_monitoring$main.coverage" NAME="main Coverage Results" MODIFIED="1661165057425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rl_monitoring$test.coverage" NAME="test Coverage Results" MODIFIED="1661227313050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rl_monitoring$main.coverage" NAME="main Coverage Results" MODIFIED="1661227404267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rl_monitoring$find_thres.coverage" NAME="find_thres Coverage Results" MODIFIED="1660815865908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

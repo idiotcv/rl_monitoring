@@ -4,7 +4,7 @@ import cv2 as cv
 
 
 def roi_crop(roi,nw,nh):
-    ow, oh = roi.shape[0], roi.shape[1]
+    oh, ow = roi.shape[0], roi.shape[1]
     # roi = cv.resize(roi,(nw,nh))
     c_x = ow // 2
     c_y = oh // 2
@@ -44,11 +44,4 @@ if __name__ == '__main__':
             x,y,w,h = roi_list[j]
             img_src[y:y+h,x:x+w,:] = text_roi
 
-        # for cnt in range(len(average_H_list)):
-        #     cv.putText(img_src, "average_H:%2.f" % average_H_list[cnt], \
-        #                (300, 300), cv.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 2)
-        #     if cnt > 0:
-        #         cv.putText(img_src, "average_H:%2.f" % average_H_list[cnt], \
-        #             (300, 300), cv.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 2)
-        # show(img_src,"white_img",True)
         print(average_H_list)

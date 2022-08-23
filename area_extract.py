@@ -23,22 +23,33 @@ def thres_segmentation(img_path,open_kernel_size,close_kernel_size,window_num):
     img_hsv_result = cv.morphologyEx(th_Ostu, cv.MORPH_OPEN, kernel_open)
     kernel_open = cv.getStructuringElement(cv.MORPH_RECT, (open_kernel_size, open_kernel_size))
     img_gray_result = cv.morphologyEx(th_Binary,cv.MORPH_OPEN,kernel_open)
-    # show(img_gray_result,"th")
-    # show(img_hsv_result,"th_ostu",)
-    # show(img_src,"src",True)
+
 
     # 解决两块显示屏挨在一起过亮的问题
     contours_thres, _ = cv.findContours(
         img_gray_result, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
     contours_ostu, _ = cv.findContours(
         img_hsv_result, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+
+    # 解决难以发现的小轮廓导致下面判断轮廓数量数显问题
+    for i in range(len(contours_ostu)):
+        area = cv.contourArea(contours_ostu[i])
+        if area < 20:
+            delete_idx = i
+            contours_ostu = contours_ostu[:delete_idx] + contours_ostu[delete_idx+1:]
+    # print(len(contours_ostu))
+    # show(img_gray_result, "th")
+    # show(img_hsv_result, "th_ostu", )
+    # show(img_src, "src", True)
     if len(contours_ostu) >= len(contours_thres):
         contours = contours_ostu
+        img_result = img_hsv_result
     else:
         contours = contours_thres
+        img_result = img_gray_result
     roi_list = get_roi(img_src, contours, window_num)
 
-    return img_hsv_result,roi_list,img_src
+    return img_result,roi_list,img_src
 
 
 # 黑色背景
@@ -101,18 +112,6 @@ def get_roi(original_img, contours, window_num):
             cv.rectangle(original_img, (x, y), (x + w, y + h), (0, 255, 0), 3)
             cv.drawContours(original_img, [contours[cnt]], 0, (255, 0, 255), 2)
 
-            # 内接矩形
-            # rect = order_points(contours[cnt].reshape(contours[cnt].shape[0],2))
-            # print(rect)
-            # xs = [i[0] for i in rect]
-            # ys = [i[1] for i in rect]
-            # xs.sort()
-            # ys.sort()
-            # 内接矩形的坐标为
-            # print(xs[1], xs[2], ys[1], ys[2])
-            # cv.rectangle(original_img, (int(xs[0]), int(ys[0])), (int(xs[3]), int(ys[3])), (255, 0, 0), 3)
-            # cv.drawContours(original_img, [contours[cnt]], 0, (0, 0, 255), 2)
-
     # for i in range(len(roi_list)):
     #     x, y, w, h = roi_list[i]
     #     roi = original_img[y:y+h,x:x+w,:]
@@ -126,36 +125,9 @@ def get_single_roi(img,roi_list):
     :param img: 原图
     :param roi_list: 前景对象坐标列表
     """
-    # img_src = cv.imread(img)
-    # single_img_rois = []
-    # for i in range(len(roi_list)):
-    #     x, y, w, h = roi_list[i]
-    #     roi = img_src[y:y+h,x:x+w,:]
-    #     # show(roi,f"roi{i+1}",True)
-    #     single_img_rois.append(roi)
-    # return single_img_rois
     x, y, w, h = roi_list
     roi = img[y:y+h,x:x+w,:]
     return roi
-
-
-# 用于获取内接矩形四个点的函数
-# def order_points(pts):
-#     # pts为轮廓坐标
-#     # 列表中存储元素分别为左上角，右上角，右下角和左下角
-#     rect = np.zeros((4, 2), dtype = "float32")
-#     # 左上角的点具有最小的和，而右下角的点具有最大的和
-#     s = pts.sum(axis = 1)
-#     rect[0] = pts[np.argmin(s)]
-#     rect[2] = pts[np.argmax(s)]
-#     # 计算点之间的差值
-#     # 右上角的点具有最小的差值,
-#     # 左下角的点具有最大的差值
-#     diff = np.diff(pts, axis=1)
-#     rect[1] = pts[np.argmin(diff)]
-#     rect[3] = pts[np.argmax(diff)]
-#     # 返回排序坐标(依次为左上右上右下左下)
-#     return rect
 
 
 def show(img,name,waitkey=False,stack_img=None):
