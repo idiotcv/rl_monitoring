@@ -11,8 +11,14 @@ def read_picture(images_src):
     return img_list
 
 
-def thres_segmentation(img_path,open_kernel_size,close_kernel_size,window_num):
-    img_src = cv.imread(img_path)
+def thres_segmentation(img_src,open_kernel_size,close_kernel_size,window_num):
+    """
+    :param img_src: 输入图像
+    :param open_kernel_size: 开操作核大小
+    :param close_kernel_size: 闭操作核大小
+    :param window_num: 显示屏个数
+    :return: 分割结果img_result 单张图片roi_list
+    """
     img_gray = cv.cvtColor(img_src,cv.COLOR_BGR2GRAY)
     img_hsv = cv.cvtColor(img_src,cv.COLOR_BGR2HSV)
 
@@ -37,7 +43,6 @@ def thres_segmentation(img_path,open_kernel_size,close_kernel_size,window_num):
         if area < 20:
             delete_idx = i
             contours_ostu = contours_ostu[:delete_idx] + contours_ostu[delete_idx+1:]
-    # print(len(contours_ostu))
     # show(img_gray_result, "th")
     # show(img_hsv_result, "th_ostu", )
     # show(img_src, "src", True)
@@ -49,7 +54,7 @@ def thres_segmentation(img_path,open_kernel_size,close_kernel_size,window_num):
         img_result = img_gray_result
     roi_list = get_roi(img_src, contours, window_num)
 
-    return img_result,roi_list,img_src
+    return img_result,roi_list
 
 
 # 黑色背景

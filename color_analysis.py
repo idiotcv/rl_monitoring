@@ -4,6 +4,12 @@ import cv2 as cv
 
 
 def roi_crop(roi,nw,nh):
+    """
+    :param roi: 获得的单个显示屏区域
+    :param nw: 中心裁剪的宽度
+    :param nh: 中心裁剪的高度
+    :return: 裁剪后的区域
+    """
     oh, ow = roi.shape[0], roi.shape[1]
     # roi = cv.resize(roi,(nw,nh))
     c_x = ow // 2
@@ -13,10 +19,14 @@ def roi_crop(roi,nw,nh):
     return roi
 
 def analysis(img_src):
-
+    """
+    :param img_src: 原图
+    :return:
+    """
     img = cv.cvtColor(img_src,cv.COLOR_BGR2HSV)
     average_H = np.sum(img[:,:,0])/(img.shape[0]*img.shape[1])
     average_H = round(average_H,2)
+    # 120.00是观察得到的经验值
     if 120.00 < average_H:
         print("显示屏故障")
     return average_H
